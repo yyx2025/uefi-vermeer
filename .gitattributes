@@ -1,0 +1,2 @@
+# Firmware extracts must stay byte-exact: no line-ending translation.
+Platforms/Xiaomi/vermeerPkg/RawFiles/** -text
