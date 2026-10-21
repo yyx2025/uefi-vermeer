@@ -1,0 +1,20 @@
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = VermeerDisplayDepexDxe
+  FILE_GUID                      = F87D1862-37F4-41D3-8002-F2E285255949
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = VermeerDisplayDepexDxeEntry
+
+[Sources]
+  VermeerDisplayDepexDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[Depex]
+  TRUE
+
+[LibraryClasses]
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint

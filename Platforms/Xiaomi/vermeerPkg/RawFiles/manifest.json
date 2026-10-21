@@ -1,0 +1,344 @@
+[
+  {
+    "file": "8af09f13-44c5-96ec-1437-dd899cb5ee5d",
+    "guid": "8af09f13-44c5-96ec-1437-dd899cb5ee5d",
+    "fv": "seg1@0xa7000000+0x0",
+    "len": 3888
+  },
+  {
+    "file": "uefiplat.cfg",
+    "guid": "dde58710-41cd-4306-dbfb-3fa90bb1d2dd",
+    "fv": "seg1@0xa7000000+0x0",
+    "len": 8323
+  },
+  {
+    "file": "fc510ee7-ffdc-11d4-bd41-0080c73c8881",
+    "guid": "fc510ee7-ffdc-11d4-bd41-0080c73c8881",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 1408
+  },
+  {
+    "file": "BDS_Menu.cfg",
+    "guid": "a91d838e-a5fa-4138-825d-455e2303079e",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2944
+  },
+  {
+    "file": "SecParti.cfg",
+    "guid": "a1e235de-e825-4591-9623-c43175811826",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 5150
+  },
+  {
+    "file": "fc510ee7-ffdc-11d4-bd41-0080c73c8881",
+    "guid": "fc510ee7-ffdc-11d4-bd41-0080c73c8881",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 1408
+  },
+  {
+    "file": "logo1.bmp",
+    "guid": "a91d838e-a5fa-4138-825d-455e23030794",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 48426
+  },
+  {
+    "file": "Panel_truly_wqxga_dsc_cmd.xml",
+    "guid": "8cae2c55-fc5a-410b-812b-8ca22f572f36",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3717
+  },
+  {
+    "file": "Panel_truly_wqxga_dsc_vid.xml",
+    "guid": "13ac9dc9-0092-4374-ae1a-06ff35950fd0",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4360
+  },
+  {
+    "file": "Panel_truly_wqxga_dual_cmd.xml",
+    "guid": "fc6315f9-f8fe-4222-a1e3-226df55d7592",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3473
+  },
+  {
+    "file": "Panel_truly_wqxga_dual_vid.xml",
+    "guid": "95e7b040-26a2-4511-9abb-1d95d6da7082",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3975
+  },
+  {
+    "file": "Panel_sharp_4k_dsc_cmd.xml",
+    "guid": "8bc595b7-391a-4a9a-8256-5b9983b30392",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2711
+  },
+  {
+    "file": "Panel_sharp_4k_dsc_vid.xml",
+    "guid": "19b58acd-b1f8-4078-b9a5-a33584b680e2",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2628
+  },
+  {
+    "file": "Panel_sharp_1080p_cmd.xml",
+    "guid": "0ae323d6-2ebe-11e8-8349-9ba636a0d80c",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2157
+  },
+  {
+    "file": "Panel_truly_1080p_cmd.xml",
+    "guid": "87273b42-311d-11e8-9324-dfb2dadfc3d1",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3434
+  },
+  {
+    "file": "Panel_truly_1080p_vid.xml",
+    "guid": "bafd3200-311d-11e8-8651-0fb3cacf38fb",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3904
+  },
+  {
+    "file": "Panel_boe_amoled_wqhd_dsc_cmd.xml",
+    "guid": "88ca5abf-d0ac-4093-a68c-0cfae1ef9635",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3043
+  },
+  {
+    "file": "Panel_boe_amoled_wqhd_dsc_vid.xml",
+    "guid": "6523a5c9-91cb-45c0-a2dc-25997cf23369",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2899
+  },
+  {
+    "file": "Panel_boe_amoled_fhd_dsc_cmd.xml",
+    "guid": "d7170685-5965-4b44-9305-37cdb199b9be",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2971
+  },
+  {
+    "file": "Panel_nt36860_wqhd_dsc_cmd.xml",
+    "guid": "8f276ee4-e75e-4c3b-8bcc-c37771e26478",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4432
+  },
+  {
+    "file": "Panel_nt36860_wqhd_dsc_vid.xml",
+    "guid": "6f2d4884-d8a0-11e9-af7a-d77b1fe990ec",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4411
+  },
+  {
+    "file": "Panel_r66451_60hz_fhd_plus_dsc_cmd.xml",
+    "guid": "81ce7295-491d-4e3f-aaa7-ab43fef2f615",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3129
+  },
+  {
+    "file": "Panel_r66451_120hz_fhd_plus_dsc_cmd.xml",
+    "guid": "8297c793-9861-422c-9f67-d447af1ea812",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3800
+  },
+  {
+    "file": "Panel_r66451_120hz_fhd_plus_dsc_cmd_hdk.xml",
+    "guid": "61156380-eb8a-4618-940f-ab9bdea1eec2",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3808
+  },
+  {
+    "file": "Panel_r66451_120hz_fhd_plus_dsc_vid.xml",
+    "guid": "44b09226-c2b4-45ed-aa6f-6686db103978",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3312
+  },
+  {
+    "file": "Panel_secondary_truly_1080p_cmd.xml",
+    "guid": "d3f8580c-ccb8-4804-bb03-776e7b542fc2",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3324
+  },
+  {
+    "file": "Panel_secondary_truly_1080p_vid.xml",
+    "guid": "d192fee9-6a04-4be8-abfe-5534e2b457ec",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3779
+  },
+  {
+    "file": "Panel_r66451_144hz_fhd_plus_dsc_cmd_cphy.xml",
+    "guid": "9874b60a-6b80-4d76-8eeb-7862c780ec03",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3780
+  },
+  {
+    "file": "Panel_r66451_144hz_fhd_plus_dsc_vid_cphy.xml",
+    "guid": "bc28e12e-c7e0-47f9-bbf9-0b45ed6f4b18",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3829
+  },
+  {
+    "file": "Panel_r66451_60hz_fhd_plus_dsc_vid.xml",
+    "guid": "637ad94d-7d9b-4d5f-b420-770b65becda8",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2747
+  },
+  {
+    "file": "Panel_vtdr6130_144hz_fhd_plus_dsc_cmd.xml",
+    "guid": "ae3f9548-010c-4aec-a9d2-4ae3e16d2f8b",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3704
+  },
+  {
+    "file": "Panel_vtdr6130_144hz_fhd_plus_dsc_vid.xml",
+    "guid": "12372575-2a07-4c4e-be92-6093a55fed33",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3585
+  },
+  {
+    "file": "Panel_vtdr6130_60hz_fhd_plus_dsc_cmd.xml",
+    "guid": "36630e03-0236-4983-abde-f982b23419fe",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3704
+  },
+  {
+    "file": "Panel_vtdr6130_60hz_fhd_plus_dsc_vid.xml",
+    "guid": "573fa171-1d5c-4c12-bdc8-19dcefbbd483",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3506
+  },
+  {
+    "file": "Panel_sharp_120hz_qhd_plus_dsc_cmd.xml",
+    "guid": "0a60af27-d18d-452f-bb8b-1a886f7f6ccc",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 5484
+  },
+  {
+    "file": "Panel_sharp_120hz_qhd_plus_dsc_vid.xml",
+    "guid": "81466938-bb9e-43dc-a208-a41ba82a5861",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 5342
+  },
+  {
+    "file": "Panel_secondary_vtdr6130_144hz_fhd_plus_dsc_cmd.xml",
+    "guid": "23eb5e2d-4a4d-4b35-bb7b-be39d7ee440d",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3745
+  },
+  {
+    "file": "Panel_secondary_vtdr6130_144hz_fhd_plus_dsc_vid.xml",
+    "guid": "a413f4e1-50fe-4848-82f1-efb814608221",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3350
+  },
+  {
+    "file": "Panel_truly_wqxga_cmd_splitlink.xml",
+    "guid": "eb0a97f6-39db-41d4-9b3c-ca3badc144b4",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3550
+  },
+  {
+    "file": "Panel_M2_38_0c_0a_dsc_cmd.xml",
+    "guid": "683f6260-3744-4ae9-9aec-3ed2ce3f0062",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 5752
+  },
+  {
+    "file": "Panel_M3_38_0c_0a_dsc_cmd.xml",
+    "guid": "0e3e03ce-a63d-4603-a171-8d0c8fcffc44",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 5115
+  },
+  {
+    "file": "Panel_M3GL_38_0c_0a_dsc_cmd.xml",
+    "guid": "7a8443ca-a29c-4488-853c-2ae73de462a3",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3578
+  },
+  {
+    "file": "Panel_M2A_42_02_0b_ltpo_dsc_cmd.xml",
+    "guid": "f2992db9-ec8f-44da-96d8-805f74ee205b",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3214
+  },
+  {
+    "file": "Panel_M11_42_02_0a_dsc_cmd.xml",
+    "guid": "485d1440-5080-899f-a66a-a88c777411ef",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4915
+  },
+  {
+    "file": "Panel_N11_42_02_0a_dsc_cmd.xml",
+    "guid": "ffeae931-57ca-449b-ae6a-a9d68a7a8790",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4846
+  },
+  {
+    "file": "Panel_M1_42_02_0a_ltpo_dsc_cmd.xml",
+    "guid": "922a8af4-47f4-44f7-97c4-d6d157f694b7",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 6268
+  },
+  {
+    "file": "Panel_M18_38_0c_0a_prim_dsc_cmd.xml",
+    "guid": "4c2a42ca-b71a-2527-a327-2b5a3bcdba52",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4073
+  },
+  {
+    "file": "Panel_M18_38_0c_0a_sec_dsc_cmd.xml",
+    "guid": "7b5c21bc-b31a-3215-b235-5a3b2aeacb31",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3769
+  },
+  {
+    "file": "Panel_N81A_36_02_0a_duldsi_dsc_vid.xml",
+    "guid": "43013daa-0ce4-4d82-99ee-17f772a38401",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 5024
+  },
+  {
+    "file": "Panel_N81A_36_02_0a_p0_duldsi_dsc_vid.xml",
+    "guid": "15a84758-9ee1-4543-9c82-f430a70f0813",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 4874
+  },
+  {
+    "file": "Panel_secondary_sim_vid.xml",
+    "guid": "9a2a35ab-c69b-2729-a529-4c2a6becaa74",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 1871
+  },
+  {
+    "file": "Panel_r66451_120hz_fhd_plus_dsc_cmd_demura.xml",
+    "guid": "f4a245c8-940e-4523-a53b-82e3c8bc6970",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3964
+  },
+  {
+    "file": "Panel_vtdr6130_144hz_fhd_plus_dsc_cmd_demura.xml",
+    "guid": "3de03011-41e8-4353-a4e5-02721e71a0f4",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3947
+  },
+  {
+    "file": "Panel_vtdr6130_144hz_fhd_plus_dsc_cmd_rfi.xml",
+    "guid": "0ef4d970-0b59-4af4-a8f7-f6a239eed792",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 3783
+  },
+  {
+    "file": "PanelSimConfig.csv",
+    "guid": "03e9256f-e621-48d8-8576-7e3b4fcf2d41",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 2963
+  },
+  {
+    "file": "uefipil.cfg",
+    "guid": "21e9bdd9-6c3f-4f10-84a5-bbec322741f1",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 6868
+  },
+  {
+    "file": "QcomChargerCfg.cfg",
+    "guid": "45fe4b7c-150c-45da-a021-4beb2048ec6f",
+    "fv": "seg1@0xa7000000+0x0/decomp/fvsec",
+    "len": 15875
+  }
+]

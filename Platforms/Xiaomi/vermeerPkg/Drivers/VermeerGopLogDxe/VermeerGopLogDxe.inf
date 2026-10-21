@@ -1,0 +1,29 @@
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = VermeerGopLogDxe
+  FILE_GUID                      = BEFCB201-C675-4E3E-8053-4142DAD86C5E
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = VermeerGopLogDxeEntry
+
+[Sources]
+  VermeerGopLogDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SiliciumPkg/SiliciumPkg.dec
+
+[Depex]
+  TRUE
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  MemoryMapHelperLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  UefiLib
+
+[Protocols]
+  gEfiGraphicsOutputProtocolGuid                ## CONSUMES
