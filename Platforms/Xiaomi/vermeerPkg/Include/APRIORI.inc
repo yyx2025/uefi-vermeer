@@ -84,7 +84,14 @@ APRIORI DXE {
   INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
+!if $(VERMEER_VENDOR_HW) == 1
+  # The stock device path driver comes from the vendor binaries, which this repository does
+  # not carry (Binaries/ is the shared Device-Binaries submodule without vermeer content).
   INF Binaries/vermeer/MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+!else
+  # VENDOR_HW = 0 (first boot): the upstream driver, as Include/DXE.inc already lists it.
+  INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+!endif
   INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
