@@ -96,6 +96,12 @@ READ_LOCK_STATUS   = TRUE
   INF UniXNUPkg/Application/UniXNU/UniXNU.inf
   INF UniXNUPkg/Driver/UniXNUDxe/UniXNUDxe.inf
 
+  # 中文启动界面（DXE 驱动，DEPEX 等 GOP）
+!if $(VERMEER_CHINESE_UI) == 1
+  INF vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUiDxe.inf
+  INF vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUi.inf
+!endif
+
   # IORT DT
   INF QcomPkg/Drivers/IortDtDxe/IortDtDxe.inf
 

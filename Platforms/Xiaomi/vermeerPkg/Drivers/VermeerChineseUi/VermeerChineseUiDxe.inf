@@ -1,0 +1,49 @@
+## @file
+#  中文启动界面的注册器（DXE 驱动）。
+#
+#  它只做一件事：把一个 Boot#### 启动项指向同 FV 里的 VermeerChineseUi
+#  应用文件，并把该项排到 BootOrder 首位。这样 BDS 会像启动普通应用一样
+#  启动中文界面——绕开“BdsDxe 的 DEPEX 是 TRUE、调度顺序不确定”的问题。
+#
+#  这是 UniXNUDxe 已经在本平台上用过的同一套机制，所以不需要新的固件特性。
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = VermeerChineseUiDxe
+  FILE_GUID                      = 3A9C51D7-6E24-4B08-9F31-58D7A2E6C4B9
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = VermeerChineseUiDxeEntry
+
+[Sources]
+  VermeerChineseUiDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  DevicePathLib
+  MemoryAllocationLib
+  PcdLib
+  PrintLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  UefiLib
+  UefiRuntimeServicesTableLib
+
+[Guids]
+  gEfiGlobalVariableGuid                        ## PRODUCES ## Variable:L"Boot####" L"BootOrder"
+
+[Protocols]
+  gEfiFirmwareVolume2ProtocolGuid               ## CONSUMES
+  gEfiLoadedImageProtocolGuid                   ## CONSUMES
+  gEfiDevicePathProtocolGuid                    ## CONSUMES
+
+[Depex]
+  gEfiVariableArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid

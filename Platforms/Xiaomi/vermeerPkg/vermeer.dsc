@@ -39,6 +39,14 @@
   #
   SOC_TYPE                       = 0
 
+  #
+  # 1 = 编入中文启动界面。
+  # 两个模块：VermeerChineseUiDxe 把 VermeerChineseUi（UEFI 应用）注册成
+  # BDS 的启动项。它们只依赖 GOP 与 ConIn，不需要任何厂商驱动，
+  # 所以 VERMEER_VENDOR_HW = 0 的首启路径也能显示。
+  #
+  VERMEER_CHINESE_UI             = 1
+
 !include KailuaPkg/KailuaPkg.dsc.inc
 
 !if ($(USE_CUSTOM_DISPLAY_DRIVER) == 1) && ($(VERMEER_VENDOR_HW) == 0)
@@ -114,6 +122,14 @@
   vermeerPkg/Drivers/VermeerGopLogDxe/VermeerGopLogDxe.inf
   vermeerPkg/Drivers/VermeerBootMemoryDxe/VermeerBootMemoryDxe.inf
   vermeerPkg/Drivers/VermeerKeyInputDxe/VermeerKeyInputDxe.inf
+  #
+  # 中文启动界面：DXE 驱动，DEPEX 等 GOP，排在 BdsDxe 之前跑。
+  # VERMEER_CHINESE_UI = 0 时不编进 FV（用于排查 GOP 相关问题时排除它）。
+  #
+!if $(VERMEER_CHINESE_UI) == 1
+  vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUiDxe.inf
+  vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUi.inf
+!endif
   DarwinBootPkg/Driver/DarwinBoot.inf
 
 [LibraryClasses]

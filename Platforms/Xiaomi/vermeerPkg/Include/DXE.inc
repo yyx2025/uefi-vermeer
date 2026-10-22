@@ -78,6 +78,12 @@
   INF vermeerPkg/Drivers/VermeerKeyInputDxe/VermeerKeyInputDxe.inf
   INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
 
+  # 中文启动界面：DEPEX 等 GOP，DXE 调度器保证它排在 GOP 发布之后、
+  # BdsDxe 之前。它跑完返回，BDS 继续原来的引导顺序。
+!if $(VERMEER_CHINESE_UI) == 1
+  INF vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUiDxe.inf
+!endif
+
   # Headless until stock Vermeer framebuffer data is available.
 !if $(VERMEER_VENDOR_HW) == 1
   INF Binaries/vermeer/QcomPkg/Drivers/GpiDxe/GpiDxe.inf

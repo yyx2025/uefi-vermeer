@@ -1,0 +1,39 @@
+## @file
+#  Redmi K70 中文启动界面（UEFI 应用）。
+#
+#  它是一个普通的 UEFI 应用，由 VermeerChineseUiDxe 注册成 BDS 启动项。
+#  不要把它当成“依赖 GOP 的 DXE 驱动”加进 DXE.inc：BdsDxe 的 DEPEX 是
+#  TRUE，DXE 调度器不保证它一定在 BDS 之前派发，界面可能永不显示。
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = VermeerChineseUi
+  FILE_GUID                      = 7E2B4C61-9A35-4F8D-B1E7-3C5A90D24F18
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = VermeerChineseUiEntry
+
+[Sources]
+  VermeerChineseUi.c
+  VermeerCjkFontData.c
+  VermeerCjkFont.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  MemoryAllocationLib
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  UefiRuntimeServicesTableLib
+
+[Protocols]
+  gEfiGraphicsOutputProtocolGuid                ## CONSUMES
+  gEfiSimpleTextInProtocolGuid                  ## CONSUMES
