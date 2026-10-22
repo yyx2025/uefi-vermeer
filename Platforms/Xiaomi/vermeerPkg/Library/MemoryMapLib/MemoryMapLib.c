@@ -83,11 +83,11 @@ STATIC EFI_MEMORY_REGION_DESCRIPTOR gMemoryDescriptor[] = {
   {"RSRV0 gap0", 0x81480000, 0x00580000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN},
   {"XBL Ramdump", 0x81A40000, 0x001C0000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
   {"RSRV1", 0x86E00000, 0x02A00000, AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_BACK_XN},
-  // vermeer DT: mpss_region@89800000 (0x10800000) ends at 0x9B000000, then q6_mpss_dtb_region
-  // (0x80000) ends at 0x9B080000 where ipa_fw_region starts. Unlike sheng, the modem region
-  // begins 0x1000000 lower, so the old sheng "PIL Reserved gap0" (0x8A800000..0x9B080000)
-  // must not be reused.
-  {"mpss-region@89800000", 0x89800000, 0x10800000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
+  // vermeer DT: the node named mpss_region@89800000 carries reg 0x8A800000/0x10800000 (the name
+  // is stale), which ends at 0x9B000000 where q6_mpss_dtb_region (0x80000) starts. Both the DT reg
+  // and the stock "PIL Reserved" (0x8A800000, 0x18280000) begin at 0x8A800000, so the old sheng
+  // gap0 descriptor must not be reused.
+  {"mpss-region@89800000", 0x8A800000, 0x10800000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
   {"q6-mpss-dtb-region@9b000000", 0x9B000000, 0x00080000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
   {"PIL Reserved gap1", 0x9B09C000, 0x00064000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
   {"Display Demura gap0", 0xA3080000, 0x01A00000, AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN},
