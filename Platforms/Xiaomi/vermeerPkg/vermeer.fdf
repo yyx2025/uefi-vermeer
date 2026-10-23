@@ -96,9 +96,10 @@ READ_LOCK_STATUS   = TRUE
   INF UniXNUPkg/Application/UniXNU/UniXNU.inf
   INF UniXNUPkg/Driver/UniXNUDxe/UniXNUDxe.inf
 
-  # 中文启动界面（DXE 驱动，DEPEX 等 GOP）
+  # 中文启动界面：这里只放应用（UEFI_APPLICATION）。
+  # 注册器 VermeerChineseUiDxe 由上面的 Include/DXE.inc 带入，不要再写一遍，
+  # 否则同一个 FILE_GUID 会在同一个 FV 里出现两次，GenFv 报 ERROR 2000。
 !if $(VERMEER_CHINESE_UI) == 1
-  INF vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUiDxe.inf
   INF vermeerPkg/Drivers/VermeerChineseUi/VermeerChineseUi.inf
 !endif
 
