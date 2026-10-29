@@ -11,7 +11,7 @@
 	branch = release/202608
 [submodule "Mu_Basecore"]
 	path = Mu_Basecore
-	url = https://github.com/microsoft/mu_basecore.git
+	url = https://github.com/yyx2025/mu_basecore.git
 	branch = release/202608
 [submodule "Silicium-ACPI"]
 	path = Silicium-ACPI
