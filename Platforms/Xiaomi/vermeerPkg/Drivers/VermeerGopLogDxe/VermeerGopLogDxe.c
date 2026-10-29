@@ -83,6 +83,30 @@ PublishGop (VOID)
     return;
   }
 
+  //
+  // Redirect the scan-out frame buffer to the "Display Reserved" splash region.
+  //
+  // The previous-stage / stock GOP reports a base the K70 DRAM does not back
+  // (observed 0xC655A224); every write DarwinBoot does to it (the green
+  // breadcrumb in DarwinEnter and the iPad home screen the loader draws) then
+  // takes a synchronous external abort (ESR EC 0x25) and the boot dies.
+  // 0xB8000000 is the splash_region ABL actually scans out and matches the
+  // K70 uefiplat.cfg, so point the protocol there before anything else uses it.
+  // FrameBufferSerialPortLib already draws the early log at 0xB8000000, which
+  // is why text shows but the (GOP-based) desktop does not.
+  //
+  {
+    EFI_MEMORY_REGION_DESCRIPTOR  Dr;
+    ZeroMem (&Dr, sizeof (Dr));
+    LocateMemoryRegionByName ("Display Reserved", &Dr);
+    LocateMemoryRegionByName ("Display_Reserved", &Dr);
+    if (Dr.Address != 0) {
+      Gop->Mode->FrameBufferBase = Dr.Address;
+      Gop->Mode->FrameBufferSize = (UINTN)Gop->Mode->Info->HorizontalResolution *
+                                   (UINTN)Gop->Mode->Info->VerticalResolution * 4;
+    }
+  }
+
   DEBUG ((
     DEBUG_ERROR,
     "GOP: base 0x%lx size 0x%lx %ux%u pixels/line %u format %d\n",
